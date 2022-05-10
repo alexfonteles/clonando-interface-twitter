@@ -3,108 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Clone - Twitter</title>
 </head>
 <body>
-    <!-- CABEÇALHO -->
-    <header>
+    <div class="container">
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
 
-        <!-- IMAGEM LOGO -->
-        <figure>
-            <img src="/assets/img/bird 1.svg" alt="Logo-clone-twitter">
-            <figcaption>Clone - Twitter</figcaption>
-        </figure>
+            <!-- IMAGEM LOGO -->
+            <figure class="cabecalho__logo">
+                <img src="/assets/img/bird 1.svg" alt="Logo-clone-twitter">
+                <figcaption>Clone - Twitter</figcaption>
+            </figure>
 
-        <!-- MENU DE NAVEGAÇÃO -->
-        <nav>
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav class="cabecalho__menuNavegacao">
 
-            <!-- LISTA DE LINKS -->
-            <ul>
-                <li>
-                    <img src="/assets/img/Home.png" alt="">
-                    <a href="">Página Inicial</a>
-                </li>
-                <li>
-                    <img src="/assets/img/Hashtag.png" alt="">
-                    <a href="">Explorar</a>
-                </li>
-                <li>
-                    <img src="/assets/img/Notification.png" alt="">
-                    <a href="">Notificação</a>
-                </li>
-                <li>
-                    <img src="/assets/img/Group.png" alt="">
-                    <a href="">Mensagem</a>
-                </li>
-                <li>
-                    <img src="/assets/img/Group (1).png" alt="">
-                    <a href="">Itens Salvo</a>
-                </li>
-                <li>
-                    <img src="/assets/img/Group (2).png" alt="">
-                    <a href="">Listas</a>
-                </li>
-                <li>
-                    <img src="/assets/img/ProfilePic.png" alt="">
-                    <a href="">Perfil</a>
-                </li>
-                <li>
-                    <img src="/assets/img/Group (3).png" alt="">
-                    <a href="">Mais</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- CONTEUDO PRINCIPAL -->
-    <main>
-        <!-- TITULO -->
-        <h1>Home</h1>
+                <!-- LISTA DE LINKS -->
+                <ul class="cabecalho__menuLista">
 
-        <!-- FORMULARIO -->
-        <form action="#">
-            <textarea name="textarea" placeholder="O que está acontecendo?"></textarea>
-            <button type="submit">Twitter</button>
-        </form>
-        <!-- FEED DE NOTICIAS -->
-        <section>
-            <ul>
-                <li>
-                    <!-- IMAGEM DO USUARIO -->
-                    <img src="/assets/img/ProfilePic (2).png" alt="">
-                    <!-- CAIXA COM INFORMAÇÕES DO USUARIO -->
-                    <div>
-                        <h2>Hudson Carolino</h2>
-                        <span>@hudsoncarolino 14s</span>
-                        <p>98% de #empregabilidade? Só na Kenzie... Pois é, 98% dos alunos formados estão trabalhando na área menos de 1 mês após a graduação #ninguemmesegura 🤯</p>
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/Home.png" alt="">
+                        <a href="">Página Inicial</a>
+                    </li>
+
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/Hashtag.png" alt="">
+                        <a href="">Explorar</a>
+                    </li>
+
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/Notification.png" alt="">
+                        <a href="">Notificação</a>
+                    </li>
+
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/Group.png" alt="">
+                        <a href="">Mensagem</a>
+                    </li>
+
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/Group (1).png" alt="">
+                        <a href="">Itens Salvo</a>
+                    </li>
+
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/Group (2).png" alt="">
+                        <a href="">Listas</a>
+                    </li>
+
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/ProfilePic.png" alt="">
+                        <a href="">Perfil</a>
+                    </li>
+
+                    <li class="cabecalho__menuItem">
+                        <img src="/assets/img/Group (3).png" alt="">
+                        <a href="">Mais</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTEUDO PRINCIPAL -->
+        <main class="conteudoPrincipal">
+            <!-- TITULO -->
+            <h1 class="conteudoPrincipal__titulo">Home</h1>
+
+            <!-- FORMULARIO -->
+            <form action="#" class="conteudoPrincipal__formulario">
+                <textarea name="textarea" placeholder="O que está acontecendo?"></textarea>
+                
+                <button type="submit">Twitter</button>
+            </form>
+
+            <!-- FEED DE NOTICIAS -->
+            <section class="conteudoPrincipal__feed">
+
+                <!-- LISTA DE NOTÍCIAS -->
+                <ul class="conteudoPrincipal__listaTweets">
+
+                    <!-- NOTÍCIA -->
+                    <li class="conteudoPrincipal__tweet">
+                        <!-- IMAGEM DO USUARIO -->
+                        <img src="/assets/img/ProfilePic (2).png" alt="">
+                        <!-- CAIXA COM INFORMAÇÕES DO USUARIO -->
+                        <div class="tweet__conteudo">
+                            <h2>Hudson Carolino</h2>
+                            <span>@hudsoncarolino 14s</span>
+                            <p>98% de #empregabilidade? Só na Kenzie... Pois é, 98% dos alunos formados estão trabalhando na área menos de 1 mês após a graduação #ninguemmesegura 🤯</p>
+                        </div>
+                    </li>
+
+                    <!-- NOTÍCIA -->
+                    <li class="conteudoPrincipal__tweet">
+                        <!-- IMAGEM DO USUARIO -->
+                        <img src="/assets/img/ProfilePic (1).png" alt="">
+                        <!-- CAIXA COM INFORMAÇÕES DO USUARIO -->
+                        <div class="tweet__conteudo">
+                            <h2>Maria Porcina</h2>
+                            <span>@mariap.na 14s</span>
+                            <p>Este é um tweet. Pode ser longo ou curto. Depende do que você tem a dizer. Ele pode ter algumas hashtags também. #likethis </p>
+                        </div>
+                    </li>
+
+                    <!-- NOTÍCIA -->
+                    <li class="conteudoPrincipal__tweet">
+                        <!-- IMAGEM DO USUARIO -->
+                        <img src="/assets/img/ProfilePic.png" alt="">
+                        <!-- CAIXA COM INFORMAÇÕES DO USUARIO -->
+                        <div class="tweet__conteudo">
+                            <h2>Daniel</h2>
+                            <span>@danielkenzie 14s</span>
+                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, 
+                                até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. 
+                                É hora de se preparar... #VouSerDev #DoZeroAoCodigo
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+        </main>
+
+        <!-- NOTICIAS -->
+        <div class="noticias">
+            <input type="text">
+            <!-- CONTAINER DE NOTICIAS E TITULO -->
+            <div class="caixa-noticias">
+                
+                <!-- TITULO -->
+                <div class="noticias-titulo">
+                    <h2>O que está acontecendo</h2>
+                </div>
+                
+                <!-- BLOCO DE NOTICIAS -->
+                <div class="noticias-bloco">
+
+                    <!-- NOTICIA  1-->
+                    <div class="noticia">
+                        <p class="categoria-data">Esports
+                            ·
+                            há 3 horas</p>
+                        <p class="descricao-noticia">MSI 2022: os Tweets do torneio internacional de meio de temporada do League of Legends</p>
+                        <p class="local">Assuntos do Momento: #MSI2022</p>
                     </div>
-                </li>
-                <li>
-                    <!-- IMAGEM DO USUARIO -->
-                    <img src="/assets/img/ProfilePic (1).png" alt="">
-                    <!-- CAIXA COM INFORMAÇÕES DO USUARIO -->
-                    <div>
-                        <h2>Maria Porcina</h2>
-                        <span>@mariap.na 14s</span>
-                        <p>Este é um tweet. Pode ser longo ou curto. Depende do que você tem a dizer. Ele pode ter algumas hashtags também. #likethis </p>
-                    </div>
-                </li>
-                <li>
-                    <!-- IMAGEM DO USUARIO -->
-                    <img src="/assets/img/ProfilePic.png" alt="">
-                    <!-- CAIXA COM INFORMAÇÕES DO USUARIO -->
-                    <div>
-                        <h2>Daniel</h2>
-                        <span>@danielkenzie 14s</span>
-                        <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, 
-                            até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. 
-                            É hora de se preparar... #VouSerDev #DoZeroAoCodigo
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </section>
 
-    </main>
+                    <!-- NOTICIA  2-->
+                    <div class="noticia">
+                        <p class="categoria-data">Gaming · Assunto do Momento</p>
+                        <p class="descricao-noticia">Cuphead</p>
+                        <p class="local">4.446 Tweets</p>
+                    </div>
+
+                    <!-- NOTICIA  3-->
+                    <div class="noticia">
+                        <p class="categoria-data">Esportes · Assunto do Momento</p>
+                        <p class="descricao-noticia">#CancelaSTdoFlamengo</p>
+                        <p class="local">8.049 Tweets</p>
+                    </div>
+
+                    <!-- NOTICIA  4-->
+                    <div class="noticia">
+                        <p class="categoria-data">Guerra na Ucrânia
+                            ·
+                            AO VIVO</p>
+                        <p class="descricao-noticia">Mísseis atingem a cidade costeira de Odessa, na Ucrânia</p>
+                        <p class="local"></p>
+                    </div>
+
+                    <!-- NOTICIA  5-->
+                    <div class="noticia">
+                        <p class="categoria-data">Futebol
+                            ·
+                            há 3 horas</p>
+                        <p class="descricao-noticia">Manchester City anuncia acordo para compra de Haaland; veja os Tweets</p>
+                        <p class="local">Assuntos do Momento: Dortmund, Haaland</p>
+                    </div>
+
+                    <!-- VER MAIS  5-->
+                    <div class="mais">
+                        <a href="#">Mostrar mais</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
